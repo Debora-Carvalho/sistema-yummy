@@ -1,16 +1,23 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from "./pages/Home/Home.jsx";
+import Cardapio from "./pages/Cardapio/Cardapio.jsx";
+import Favoritos from "./pages/Favoritos/Favoritos.jsx";
+import NaoEncontrada from "./pages/NaoEncontrada/NaoEncontrada.jsx";
 import './App.css';
-import Header from './components/Header/Header.jsx';
-import Footer from './components/Footer/Footer.jsx';
 
 function App() {
   return (
     <>
-      <div className='App'>
-        <Header />
-        <Footer />
-      </div>
+    <Home />
+    {/* <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter> */}
     </>
-  )
+  );
 }
 
 export default App;
+

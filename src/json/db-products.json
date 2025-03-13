@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "name": "Hambúrguer",
+        "price": 16.50,
+        "type": "Salgado",
+        "image": "https://www.flaticon.com/free-icons/hamburguer",
+        "extras": [
+            {
+                "name": "Queijo",
+                "price": 5.00
+            },
+            {
+                "name": "Bacon",
+                "price": 3.00
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Pizza",
+        "price": 40.00,
+        "type": "Salgado",
+        "image": "https://www.flaticon.com/free-stickers/pizza",
+        "extras": [
+            {
+                "name": "Queijo",
+                "price": 5.00
+            },
+            {
+                "name": "Bacon",
+                "price": 3.00
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Cachorro-quente",
+        "price": 8.50,
+        "type": "Salgado",
+        "image": "https://www.flaticon.com/free-stickers/fast-food",
+        "extras": [
+            {
+                "name": "Maionese",
+                "price": 1.00
+            },
+            {
+                "name": "Ervilha",
+                "price": 1.00
+            },
+            {
+                "name": "Milho",
+                "price": 1.00
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Sorvete",
+        "price": 7.90,
+        "type": "Doce",
+        "image": "https://www.flaticon.com/free-stickers/ice-cream",
+        "extras": [
+            {
+                "name": "Calda de morango",
+                "price": 1.00
+            },
+            {
+                "name": "Calda de chocolate",
+                "price": 1.00
+            },
+            {
+                "name": "Calda de caramelo",
+                "price": 1.20
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Muffin",
+        "price": 8.90,
+        "type": "Doce",
+        "image": "https://www.flaticon.com/free-stickers/muffin",
+        "extras": [
+            {
+                "name": "Calda de morango",
+                "price": 1.00
+            },
+            {
+                "name": "Calda de chocolate",
+                "price": 1.00
+            },
+            {
+                "name": "Calda de caramelo",
+                "price": 1.20
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Donut",
+        "price": 3.99,
+        "type": "Doce",
+        "image": "https://www.flaticon.com/free-stickers/fast-food",
+        "extras": [
+            {
+                "name": "Cobertura de morango",
+                "price": 1.50
+            },
+            {
+                "name": "Cobertura de chocolate",
+                "price": 1.50
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Refrigerante",
+        "price": 3.00,
+        "type": "Bebida",
+        "image": "https://www.flaticon.com/free-stickers/soda",
+        "extras": [
+            {
+                "name": "Canudo",
+                "price": 0.50
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Suco",
+        "price": 3.00,
+        "type": "Bebida",
+        "image": "https://www.flaticon.com/free-stickers/glass",
+        "extras": [
+            {
+                "name": "Canudo",
+                "price": 0.50
+            }
+        ]
+    }
+]
