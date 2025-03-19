@@ -9,5 +9,21 @@
 }
 
 .container-home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin: 0.5rem 5rem;
+}
+
+.container-home__content {
+    font-size: 4rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.container-home__tags {
+    display: flex;
+    justify-content: end;
+}
+
+.container-home__tags .container-description-home {
+    width: 50%;
 }
