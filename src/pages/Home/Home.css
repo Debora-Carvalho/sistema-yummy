@@ -1,3 +1,13 @@
+.container {
+    background-image: url('../../assets/images/background-burger-home.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 100vh; 
+    width: 100%; 
+    margin: 0;
+}
+
 .container-home {
     margin: 0.5rem 5rem;
 }

@@ -4,7 +4,7 @@
         "name": "Hambúrguer",
         "price": 16.50,
         "type": "Salgado",
-        "image": "https://www.flaticon.com/free-icons/hamburguer",
+        "image": "1_burger.jpg",
         "extras": [
             {
                 "name": "Queijo",
@@ -21,7 +21,7 @@
         "name": "Pizza",
         "price": 40.00,
         "type": "Salgado",
-        "image": "https://www.flaticon.com/free-stickers/pizza",
+        "image": "2_pizza.jpg",
         "extras": [
             {
                 "name": "Queijo",
@@ -38,7 +38,7 @@
         "name": "Cachorro-quente",
         "price": 8.50,
         "type": "Salgado",
-        "image": "https://www.flaticon.com/free-stickers/fast-food",
+        "image": "1_burger.jpg",
         "extras": [
             {
                 "name": "Maionese",
@@ -59,7 +59,7 @@
         "name": "Sorvete",
         "price": 7.90,
         "type": "Doce",
-        "image": "https://www.flaticon.com/free-stickers/ice-cream",
+        "image": "1_burger.jpg",
         "extras": [
             {
                 "name": "Calda de morango",
@@ -80,7 +80,7 @@
         "name": "Muffin",
         "price": 8.90,
         "type": "Doce",
-        "image": "https://www.flaticon.com/free-stickers/muffin",
+        "image": "1_burger.jpg",
         "extras": [
             {
                 "name": "Calda de morango",
@@ -101,7 +101,7 @@
         "name": "Donut",
         "price": 3.99,
         "type": "Doce",
-        "image": "https://www.flaticon.com/free-stickers/fast-food",
+        "image": "1_burger.jpg",
         "extras": [
             {
                 "name": "Cobertura de morango",
@@ -118,7 +118,7 @@
         "name": "Refrigerante",
         "price": 3.00,
         "type": "Bebida",
-        "image": "https://www.flaticon.com/free-stickers/soda",
+        "image": "1_burger.jpg",
         "extras": [
             {
                 "name": "Canudo",
@@ -131,7 +131,7 @@
         "name": "Suco",
         "price": 3.00,
         "type": "Bebida",
-        "image": "https://www.flaticon.com/free-stickers/glass",
+        "image": "1_burger.jpg",
         "extras": [
             {
                 "name": "Canudo",

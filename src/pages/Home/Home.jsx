@@ -5,13 +5,13 @@ import './Home.css';
 
 function Home() {
   return (
-    <>
-    <Header />
-    <main className='container-home'>
-      <h1>Bem-vindo ao Yummy!</h1>
-    </main>
-    <Footer />
-    </>
+    <div className='container'>
+      <Header />
+      <main className='container-home'>
+        <h1>Bem-vindo ao Yummy!</h1>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
