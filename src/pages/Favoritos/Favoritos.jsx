@@ -10,4 +10,4 @@ const Favoritos = () => {
   );
 };
 
-export default Favoritos;  // Certifique-se de que a exportação é feita assim
+export default Favoritos;  

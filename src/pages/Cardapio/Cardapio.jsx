@@ -1,12 +1,18 @@
 import React from 'react';
+import Header from '../../components/Header/Header.jsx';
+import Footer from '../../components/Footer/Footer.jsx';
 import './Cardapio.css';
 
 function Cardapio() {
   return (
     <>
-      <h1>Cardapio</h1>
+    <Header />
+    <main className='container-cardapio'>
+      <h1>Cardápio</h1>
+    </main>
+    <Footer />
     </>
-  )
+  );
 }
 
 export default Cardapio;

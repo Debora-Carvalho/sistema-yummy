@@ -1,6 +1,7 @@
 .header {
   background-color: transparent;
   color: #fff;
+  margin: 1.2rem;
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
@@ -35,20 +36,21 @@
   align-items: center;
   width: auto;
   height: 40px;
-  border-radius: 20px;
-  border: 2px solid #fff;
   padding: 0 50px;
   gap: 50px;
-  background-color: rgba(176, 169, 169, 0.668);
-  color: #333;
+  background-color: transparent;
+  color: #fff;
 }
+
+/* BOTÃO DO CARRINHO */
 
 .header-nav-container .btn-cart {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 40px;
+  width: 100%;
+  max-width: 40px;
   height: 40px;
   border-radius: 100%;
   background-color: #fff;
@@ -58,6 +60,29 @@
 .header-nav-container .btn-cart .icon-cart {
   font-size: 1.6rem;
   color: #333;
+}
+
+/* BARRA DE PESQUISA */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.search-icon {
+  color: #555;
+  margin-right: 5px;
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
 }
 
   
