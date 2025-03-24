@@ -16,14 +16,39 @@
 
 .container-home__content {
     font-size: 4rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .container-home__tags {
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%; 
     justify-content: end;
+    padding-left: 30%;
 }
 
-.container-home__tags .container-description-home {
-    width: 50%;
+.description-home__tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.description-home__tags .tag-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #333;
+    font-size: 30px;
+    color: #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.description-home__tags .tag-description {
+    color: #fff; 
 }

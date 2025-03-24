@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import './Home.css';
-import { FaHamburger, FaHotdog, FaIceCream, FaPizzaSlice } from 'react-icons/fa';
+import { FaHamburger, FaHotdog, FaIceCream, FaPizzaSlice, FaCoffee } from 'react-icons/fa';
 
 function Home() {
   return (
@@ -16,18 +16,32 @@ function Home() {
         </div>
 
         <div className='container-home__tags'>
-          <div className='container-description-home'>
-            <p className='description-home'>
-              Escolha um de nossos deliciosos produtos e receba com qualidade no conforto da sua casa!
-            </p>
+            <div className='description-home__tags'>
+              <div className='tag-icon'>
+                <FaHamburger />
+              </div>
+              <div className='tag-description'>
+                Escolha um de nossos deliciosos produtos e receba com qualidade no conforto da sua casa!
+              </div>
+            </div>
 
             <div className='description-home__tags'>
-             <FaHamburger />
-             <FaPizzaSlice />
-             <FaHotdog />
-             <FaIceCream />
+              <div className='tag-icon'>
+                <FaHamburger />
+              </div>
+              <div className='tag-description'>
+                Escolha um de nossos deliciosos produtos e receba com qualidade no conforto da sua casa!
+              </div>
             </div>
-          </div>
+
+            <div className='description-home__tags'>
+              <div className='tag-icon'>
+                <FaHamburger />
+              </div>
+              <div className='tag-description'>
+                Escolha um de nossos deliciosos produtos e receba com qualidade no conforto da sua casa!
+              </div>
+            </div>
         </div>
       </main>
       <Footer />
