@@ -11,12 +11,13 @@
 .container-home {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0.5rem 5rem;
+    margin: 0 5rem;
 }
 
 .container-home__content {
     font-size: 4rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-top: 8.5rem;
 }
 
 .container-home__tags {
@@ -25,6 +26,7 @@
     width: 100%; 
     justify-content: end;
     padding-left: 30%;
+    margin-top: 8.5rem;
 }
 
 .description-home__tags {
