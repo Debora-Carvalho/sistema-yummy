@@ -4,7 +4,7 @@
     align-items: center;
     background: #fff;
     color: #000;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 16px;
     width: 250px;
@@ -16,9 +16,35 @@
     transform: scale(1.05);
 }
 
+.product-card__header {
+    display: grid;
+    grid-template-columns: 3fr auto; 
+    text-align: start;
+    align-items: center; 
+    justify-content: space-between;
+    width: 100%;
+}
+  
+.product-name {
+    margin: 0; 
+}
+
+.btn-favorito {
+    font-size: 1.2rem;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 10px 20px; 
+    margin-top: -20px;
+    margin-right: -20px;
+    background-color: #333333; 
+    cursor: pointer; 
+}
+
 .product-image {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -30,44 +56,47 @@
 }
 
 .product-price {
-    font-size: 1rem;
-    color: #e44d26;
+    font-size: 1.5rem;
+    color: #242424;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
-.card-buttons {
-    display: flex;
+.product-card__buy {
+    display: grid;
+    grid-template-columns: 3fr auto;
+    align-items: center;
+    text-align: start;
     justify-content: space-between;
     width: 100%;
-    margin-top: 10px;
 }
 
-.details-button,
-.cart-button {
-    background-color: #e44d26;
-    color: white;
+.product-card__buy .btn-cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333; 
+    font-size: 1rem;
     border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
+    border-radius: 20px;
+    padding: 0.5rem;
+    gap: 10px;
+    color: #fff;    
     cursor: pointer;
-    transition: background 0.2s;
 }
 
-.details-button:hover,
-.cart-button:hover {
-    background-color: #d43f1f;
+.product-card__buy .btn-cart .btn-cart__icon {
+    font-size: 1.2rem;
 }
 
-.favorite-button {
-    background: none;
+.btn-extras {
+    background-color: transparent;
+    color: #242424;
+    border: 0;
+    cursor: pointer;
+    width: 100%;
+    text-align: start;
     border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #e44d26;
-    transition: color 0.2s;
 }
 
-.favorite-button:hover {
-    color: #d43f1f;
-}
+

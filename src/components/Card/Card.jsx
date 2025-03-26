@@ -1,59 +1,61 @@
 import React, { useState } from 'react';
 import './Card.css';
+import { FaHeart, FaRegHeart } from "react-icons/fa";
+import { MdShoppingCart } from "react-icons/md";
+import { useFavoritoContext } from '../../contexts/Favorito.jsx';
+import ModalExtras from '../ModalExtras/ModalExtras.jsx'; 
 
-function Card({ product, onAddToCart, onToggleFavorite, isFavorite }) {
-    const [showExtras, setShowExtras] = useState(false);
-    const [selectedExtras, setSelectedExtras] = useState([]);
+function Card({ product, onAddToCart }) {
+    const { favorito, adicionarFavorito } = useFavoritoContext();
+    const ehFavorito = favorito.some((fav) => fav.id === product.id);
+    const icone = ehFavorito ? <FaHeart color="red" /> : <FaRegHeart color="black" />;
 
-    const handleExtraChange = (extra, checked) => {
-        setSelectedExtras(prev => 
-            checked ? [...prev, extra] : prev.filter(e => e !== extra)
-        );
-    };
+    const [showModal, setShowModal] = useState(false);
 
-    const handleToggleExtras = () => {
-        setShowExtras(prev => !prev);
-    };
-
-    const handleAddToCart = () => {
-        onAddToCart(product, selectedExtras); 
+    const handleAddToCart = (selectedExtras) => {
+        onAddToCart(product, selectedExtras);
+        setShowModal(false); 
     };
 
     return (
-        <div className="product-card">
-            <h3 className="product-name">{product.name}</h3>
-            <img src={product.image} alt={product.name} className="product-image"/>
-            <p className="product-price">R$ {product.price.toFixed(2)}</p>
-
-            <button onClick={handleToggleExtras}>
-                    {showExtras ? 'Ocultar extras' : 'Mais detalhes'}
-            </button>
-
-            {showExtras && (
-                <div className="extras">
-                    {product.extras.map(extra => (
-                        <div key={extra.name}>
-                            <input
-                                type="checkbox"
-                                id={extra.name}
-                                onChange={(e) => handleExtraChange(extra, e.target.checked)}
-                            />
-                            <label htmlFor={extra.name}>{extra.name} - R${extra.price.toFixed(2)}</label>
-                        </div>
-                    ))}
+        <>
+            {/* CARD PRINCIPAL */}
+            <div className="product-card">
+                <div className="product-card__header">
+                    <h3 className="product-name">{product.name}</h3>
+                    <button onClick={() => adicionarFavorito(product)} className="btn-favorito">
+                        {icone}
+                    </button>
                 </div>
-            )}
 
-            <div className='card-buttons'>
-                <button onClick={handleAddToCart}>Adicionar ao carrinho</button>
+                <img 
+                    src={new URL(`../../assets/images/${product.image}`, import.meta.url).href}
+                    alt={product.name} 
+                    className="product-image"
+                />
 
-                <button onClick={() => onToggleFavorite(product)}>
-                    {isFavorite ? 'Desfavoritar' : 'Favoritar'}
+                <div className="product-card__buy">
+                    <p className="product-price">R$ {product.price.toFixed(2)}</p>
+                    <button onClick={() => onAddToCart(product, [])} className="btn-cart">
+                        Adicionar <MdShoppingCart className="btn-cart__icon" />
+                    </button>
+                </div>
+
+                {/* Botão para abrir o modal */}
+                <button onClick={() => setShowModal(true)} className="btn-extras">
+                    Extras
                 </button>
             </div>
-        </div>
+
+            {/* MODAL DE PERSONALIZAÇÃO */}
+            <ModalExtras 
+                product={product} 
+                isOpen={showModal} 
+                onClose={() => setShowModal(false)}
+                onConfirm={handleAddToCart}
+            />
+        </>
     );
 }
 
 export default Card;
-

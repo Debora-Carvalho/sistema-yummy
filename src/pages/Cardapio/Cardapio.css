@@ -4,11 +4,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 8.5rem;
 }
 
 .container-cardapio h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .cards-container {

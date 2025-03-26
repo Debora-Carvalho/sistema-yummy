@@ -4,6 +4,7 @@ import Footer from '../../components/Footer/Footer.jsx';
 import Card from '../../components/Card/Card.jsx'; 
 import './Cardapio.css';
 import productsData from '../../json/db-products.json'; 
+import { Link } from 'react-router-dom';
 
 function Cardapio() {
   const [products, setProducts] = useState([]);
@@ -17,6 +18,7 @@ function Cardapio() {
       <Header />
       <main className="container-cardapio">
         <h1>Cardápio</h1>
+        <Link to="/favoritos">Favoritos</Link>
 
         <div className="cards-container">
           {products.map(product => (

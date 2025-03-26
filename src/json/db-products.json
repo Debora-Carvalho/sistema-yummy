@@ -19,9 +19,9 @@
     {
         "id": 2,
         "name": "Batata-frita",
-        "price": 8.50,
+        "price": 6.50,
         "type": "Salgado",
-        "image": "1_burger.jpg",
+        "image": "2_french-fries.jpg",
         "extras": [
             {
                 "name": "Maionese",
@@ -38,7 +38,7 @@
         "name": "Pizza",
         "price": 40.00,
         "type": "Salgado",
-        "image": "2_pizza.jpg",
+        "image": "3_pizza.jpg",
         "extras": [
             {
                 "name": "Queijo",
@@ -55,7 +55,7 @@
         "name": "Cachorro-quente",
         "price": 8.50,
         "type": "Salgado",
-        "image": "1_burger.jpg",
+        "image": "4_hot-dog.jpg",
         "extras": [
             {
                 "name": "Maionese",
@@ -76,7 +76,7 @@
         "name": "Sorvete",
         "price": 7.90,
         "type": "Doce",
-        "image": "1_burger.jpg",
+        "image": "5_ice-cream.jpg",
         "extras": [
             {
                 "name": "Calda de morango",
@@ -97,7 +97,7 @@
         "name": "Bolo",
         "price": 8.90,
         "type": "Doce",
-        "image": "1_burger.jpg",
+        "image": "6_cake.jpg",
         "extras": [
             {
                 "name": "Calda de morango",
@@ -118,7 +118,7 @@
         "name": "Donut",
         "price": 3.99,
         "type": "Doce",
-        "image": "1_burger.jpg",
+        "image": "7_donut.jpg",
         "extras": [
             {
                 "name": "Cobertura de morango",
@@ -135,7 +135,7 @@
         "name": "Refrigerante",
         "price": 3.00,
         "type": "Bebida",
-        "image": "1_burger.jpg",
+        "image": "8_soda.jpg",
         "extras": [
             {
                 "name": "Canudo",
@@ -148,7 +148,7 @@
         "name": "Suco",
         "price": 3.00,
         "type": "Bebida",
-        "image": "1_burger.jpg",
+        "image": "9_juice.jpg",
         "extras": [
             {
                 "name": "Canudo",
@@ -158,10 +158,10 @@
     },
     {
         "id": 10,
-        "name": "Coffee",
+        "name": "Café",
         "price": 3.00,
         "type": "Bebida",
-        "image": "1_burger.jpg",
+        "image": "10_coffee.jpg",
         "extras": [
             {
                 "name": "Chantilly",
