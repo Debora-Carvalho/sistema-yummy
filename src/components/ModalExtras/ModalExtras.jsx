@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './ModalExtras.css';
+import { MdShoppingCart } from "react-icons/md";
 
 function ModalExtras({ product, isOpen, onClose, onConfirm }) {
     const [selectedExtras, setSelectedExtras] = useState([]);
@@ -51,10 +52,11 @@ function ModalExtras({ product, isOpen, onClose, onConfirm }) {
                 <p className="modal-subtotal">Subtotal: R$ {subtotal.toFixed(2)}</p>
 
                 <div className="modal-buttons">
-                    <button onClick={onClose} className="btn-cancel">Cancelar</button>
                     <button onClick={() => onConfirm(selectedExtras)} className="btn-confirm">
-                        Adicionar ao Carrinho
+                        Adicionar ao Carrinho <MdShoppingCart className="btn-cart__icon" />
                     </button>
+
+                    <button onClick={onClose} className="btn-cancel">Cancelar</button>
                 </div>
             </div>
         </div>

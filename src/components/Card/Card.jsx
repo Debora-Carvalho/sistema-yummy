@@ -43,7 +43,7 @@ function Card({ product, onAddToCart }) {
 
                 {/* Botão para abrir o modal */}
                 <button onClick={() => setShowModal(true)} className="btn-extras">
-                    Extras
+                    Ver mais
                 </button>
             </div>
 

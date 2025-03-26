@@ -17,7 +17,7 @@
     padding: 20px;
     width: 90%;
     max-width: 400px;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -57,20 +57,33 @@
     margin-top: 10px;
 }
 
-.btn-cancel, .btn-confirm {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+.modal-buttons .btn-confirm, .modal-buttons .btn-cancel {
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 0.5rem;
+    gap: 10px; 
     cursor: pointer;
-    font-size: 14px;
 }
 
-.btn-cancel {
-    background-color: red;
-    color: white;
+.modal-buttons .btn-confirm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333; 
+    color: #fff;   
+    border: none;
 }
 
-.btn-confirm {
-    background-color: green;
-    color: white;
+.modal-buttons .btn-confirm .btn-cart__icon {
+    font-size: 1.2rem;
 }
+
+.modal-buttons .btn-cancel {
+    background-color: transparent;
+    color: #333333;
+    border: 2px solid #333333;
+}
+
+
+
