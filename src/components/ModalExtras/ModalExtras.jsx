@@ -32,6 +32,8 @@ function ModalExtras({ product, isOpen, onClose, onConfirm }) {
                 />
                 <p className="modal-price">Preço base: R$ {product.price.toFixed(2)}</p>
 
+                <p className="modal-description">{product.description}</p>
+
                 <h3>Escolha os extras:</h3>
                 <div className="modal-extras">
                     {product.extras.map(extra => (

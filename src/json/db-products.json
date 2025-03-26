@@ -5,6 +5,7 @@
         "price": 16.50,
         "type": "Salgado",
         "image": "1_burger.jpg",
+        "description": "Pão macio, carne suculenta, queijo derretido e molhos irresistíveis para um sabor inesquecível.",
         "extras": [
             {
                 "name": "Queijo",
@@ -22,6 +23,7 @@
         "price": 6.50,
         "type": "Salgado",
         "image": "2_french-fries.jpg",
+        "description": "Crocantes por fora, macias por dentro, servidas quentinhas e irresistíveis com molhos saborosos.",
         "extras": [
             {
                 "name": "Maionese",
@@ -39,6 +41,7 @@
         "price": 40.00,
         "type": "Salgado",
         "image": "3_pizza.jpg",
+        "description": "Massa perfeita, molho de tomate temperado, queijo derretido e ingredientes frescos para uma experiência deliciosa.",
         "extras": [
             {
                 "name": "Queijo",
@@ -56,6 +59,7 @@
         "price": 8.50,
         "type": "Salgado",
         "image": "4_hot-dog.jpg",
+        "description": "Pão fofinho, salsicha suculenta, acompanhamentos variados e molhos especiais para um lanche clássico.",
         "extras": [
             {
                 "name": "Maionese",
@@ -77,6 +81,7 @@
         "price": 7.90,
         "type": "Doce",
         "image": "5_ice-cream.jpg",
+        "description": "Cremoso, refrescante e disponível em diversos sabores para adoçar seu dia.",
         "extras": [
             {
                 "name": "Calda de morango",
@@ -98,6 +103,7 @@
         "price": 8.90,
         "type": "Doce",
         "image": "6_cake.jpg",
+        "description": "Massa fofinha, recheios irresistíveis e cobertura deliciosa, ideal para qualquer ocasião.",
         "extras": [
             {
                 "name": "Calda de morango",
@@ -119,6 +125,7 @@
         "price": 3.99,
         "type": "Doce",
         "image": "7_donut.jpg",
+        "description": "Macio, coberto com glacê ou chocolate, perfeito para acompanhar um café.",
         "extras": [
             {
                 "name": "Cobertura de morango",
@@ -136,11 +143,16 @@
         "price": 3.00,
         "type": "Bebida",
         "image": "8_soda.jpg",
+        "description": "Seu refri gelado, disponível em vários sabores para refrescar qualquer momento.",
         "extras": [
             {
                 "name": "Canudo",
                 "price": 0.50
-            }
+            },
+            {
+                "name": "Rodelas de limão",
+                "price": 0.50
+            }       
         ]
     },
     {
@@ -149,6 +161,7 @@
         "price": 3.00,
         "type": "Bebida",
         "image": "9_juice.jpg",
+        "description": "Natural e refrescante, feito com frutas selecionadas para um sabor irresistível.",
         "extras": [
             {
                 "name": "Canudo",
@@ -162,6 +175,7 @@
         "price": 3.00,
         "type": "Bebida",
         "image": "10_coffee.jpg",
+        "description": "Aroma intenso e sabor encorpado, ideal para energizar seu dia.",
         "extras": [
             {
                 "name": "Chantilly",
