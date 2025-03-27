@@ -36,6 +36,7 @@ function Card({ product, onAddToCart }) {
 
                 <div className="product-card__buy">
                     <p className="product-price">R$ {product.price.toFixed(2)}</p>
+                    
                     <button onClick={() => onAddToCart(product, [])} className="btn-cart">
                         Adicionar <MdShoppingCart className="btn-cart__icon" />
                     </button>
