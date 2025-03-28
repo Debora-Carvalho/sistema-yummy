@@ -1,27 +1,48 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'; 
 import './ModalExtras.css';
 import { FaStar } from "react-icons/fa";
 import { MdShoppingCart } from "react-icons/md";
 
 function ModalExtras({ product, isOpen, onClose, onConfirm }) {
     const [selectedExtras, setSelectedExtras] = useState([]);
+    const [quantity, setQuantity] = useState(1);
+    const [showMessage, setShowMessage] = useState(false);
     
-    // reseta os extras sempre que o modal é aberto
+    // Reseta os extras e a quantidade sempre que o modal é aberto
     useEffect(() => {
         if (isOpen) {
             setSelectedExtras([]);
+            setQuantity(1);
         }
     }, [isOpen]);
 
-    const handleExtraChange = (extra, checked) => {
-        setSelectedExtras(prev => 
-            checked ? [...prev, extra] : prev.filter(e => e.name !== extra.name)
+    const handleExtraChange = (extra) => {
+        setSelectedExtras(prev =>
+            prev.some(e => e.name === extra.name)
+                ? prev.filter(e => e.name !== extra.name)  // Remove extra se já estiver selecionado
+                : [...prev, extra]  // Adiciona extra se não estiver
         );
     };
 
-    const subtotal = product.price + selectedExtras.reduce((sum, extra) => sum + extra.price, 0);
+    const increaseQuantity = () => {
+        setQuantity(prev => prev + 1);
+        showTemporaryMessage(`+1 ${product.name}`);
+    };
 
-    if (!isOpen) return null; 
+    const decreaseQuantity = () => {
+        if (quantity > 1) {
+            setQuantity(prev => prev - 1);
+        }
+    };
+
+    const showTemporaryMessage = (message) => {
+        setShowMessage(message);
+        setTimeout(() => setShowMessage(false), 1500);
+    };
+
+    const subtotal = (product.price + selectedExtras.reduce((sum, extra) => sum + extra.price, 0)) * quantity;
+
+    if (!isOpen) return null;
 
     return (
         <div className="modal-overlay">
@@ -51,24 +72,30 @@ function ModalExtras({ product, isOpen, onClose, onConfirm }) {
                     <h3>Escolha os extras:</h3>
                     <div className="modal-extras">
                         {product.extras.map(extra => (
-                            <div key={extra.name} className="extra-item">
-                                <input
-                                    type="checkbox"
-                                    id={extra.name}
-                                    onChange={(e) => handleExtraChange(extra, e.target.checked)}
-                                />
-                                <label htmlFor={extra.name}>{extra.name} - R$ {extra.price.toFixed(2)}</label>
-                            </div>
+                            <button
+                                key={extra.name}
+                                className={`extra-button ${selectedExtras.some(e => e.name === extra.name) ? 'selected' : ''}`}
+                                onClick={() => handleExtraChange(extra)}
+                            >
+                                {extra.name} - R$ {extra.price.toFixed(2)}
+                            </button>
                         ))}
                     </div>
 
-                    <p className="modal-subtotal">Subtotal: R$ {subtotal.toFixed(2)}</p>
-
                     <div className="modal-buttons">
-                        <button onClick={() => onConfirm(selectedExtras)} className="btn-confirm">
-                            Adicionar ao Carrinho <MdShoppingCart className="btn-cart__icon" />
+                        <div className="quantity-controls">
+                            <button onClick={decreaseQuantity} className="btn-quantity">-</button>
+                            <input type="text" value={quantity} readOnly className="quantity-input" />
+                            <button onClick={increaseQuantity} className="btn-quantity">+</button>
+                        </div>
+                        <button onClick={() => onConfirm(selectedExtras, quantity)} className="btn-confirm">
+                            <p className="modal-subtotal"> R$ {subtotal.toFixed(2)}</p>
+                            <p className="btn-confirm-div">|</p>
+                            Adicionar <MdShoppingCart className="btn-cart__icon" />
                         </button>
                     </div>
+
+                    {showMessage && <div className="message-toast">{showMessage}</div>}
                 </div>
             </div>
         </div>

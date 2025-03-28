@@ -62,6 +62,13 @@
     color: #e2b238;
 }
 
+.modal-tags .modal-tag-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .modal-price {
     font-size: 20px;
     font-weight: bold;
@@ -85,24 +92,75 @@
     gap: 10px;
 }
 
-.modal-subtotal {
-    font-size: 16px;
+/* Botão de extra estilizado */
+.extra-button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid #ff6600;
+    background-color: #fff;
+    color: #ff6600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.extra-button.selected {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+/* Controles de quantidade */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 15px 0;
+}
+
+.btn-quantity {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ff6600;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    color: #ff6600;
+    background: transparent;
+}
+
+/* Mensagem temporária */
+.message-toast {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
     font-weight: bold;
-    margin: 10px 0;
+    animation: fadeOut 1.5s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .modal-buttons {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     margin-top: 10px;
-}
-
-.modal-buttons .btn-confirm {
-    font-size: 1rem;
-    border-radius: 20px;
-    padding: 0.5rem;
-    gap: 10px; 
-    cursor: pointer;
+    gap: 20px;
 }
 
 .modal-buttons .btn-confirm {
@@ -113,10 +171,27 @@
     background-color: #333333; 
     color: #fff;   
     border: none;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin: 10px 0;
+    gap: 10px; 
+    max-height: fit-content;
+    cursor: pointer;
 }
 
 .modal-buttons .btn-confirm .btn-cart__icon {
     font-size: 1.2rem;
+}
+
+.modal-buttons .btn-confirm .modal-subtotal {
+    font-weight: bold;
+}
+
+.modal-buttons .btn-confirm .btn-confirm-div {
+    font-size: 0.8;
+    color: #5c5b5b;
+    margin: 0px 10px;
 }
 
 .container-btn-close {

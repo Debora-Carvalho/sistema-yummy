@@ -1,0 +1,22 @@
+.filtro-nav {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn-filtro {
+    padding: 10px 15px;
+    border: none;
+    background-color: #333333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btn-filtro.ativo {
+    background-color: #ff9800;
+    color: #fff;
+    font-weight: bold;
+}
