@@ -85,6 +85,10 @@
     cursor: pointer;
 }
 
+.product-card__buy .btn-cart:hover {
+    background-color: #ff9800;
+}
+
 .product-card__buy .btn-cart .btn-cart__icon {
     font-size: 1.2rem;
 }
@@ -97,6 +101,12 @@
     width: 100%;
     text-align: start;
     border: none;
+    transition: ease 0.3s;
+}
+
+.btn-extras:hover {
+    color: #ff9800;
+    background-color: transparent;
 }
 
 

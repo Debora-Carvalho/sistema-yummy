@@ -32,6 +32,7 @@ function ModalExtras({ product, isOpen, onClose, onConfirm }) {
     const decreaseQuantity = () => {
         if (quantity > 1) {
             setQuantity(prev => prev - 1);
+            showTemporaryMessage(`-1 ${product.name}`);
         }
     };
 
