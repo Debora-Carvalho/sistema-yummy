@@ -20,6 +20,10 @@
     margin-top: 8.5rem;
 }
 
+.container-home__content .title-home {
+    color: #fff;
+}
+
 .container-home__tags {
     display: grid;
     grid-template-rows: repeat(3, 1fr);

@@ -1,0 +1,137 @@
+.container-pedido {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    align-items: center;
+    padding: 70px 90px;
+    margin-top: 5rem;
+}
+
+.container-pedido-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 20px;
+}
+
+.container-pedido-card-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.pedido-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pedido-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.pedido-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.pedido-item .subtotal {
+    font-weight: bold;
+    color: #4caf50;
+}
+
+.container-pedido-card-resumo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-pedido-card-resumo h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.container-pedido-card-resumo .form-group {
+    margin-bottom: 15px;
+}
+
+.container-pedido-card-resumo label {
+    font-size: 14px;
+    color: #555;
+}
+
+.container-pedido-card-resumo select,
+.container-pedido-card-resumo input,
+.container-pedido-card-resumo textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.container-pedido-card-resumo textarea {
+    height: 100px;
+}
+
+.container-pedido-card-resumo button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.container-pedido-card-resumo button:hover {
+    background-color: #45a049;
+}
+
+/* quando o carrinho estiver vazio */
+.carrinho-vazio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 400px;
+    text-align: center;
+}
+
+.carrinho-vazio .carrinho-vazio__imagem {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+.carrinho-vazio .carrinho-vazio__titulo {
+    color: #777;
+}
+
+.carrinho-vazio .carrinho-vazio__texto {
+    font-size: 18px;
+    color: #777;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
