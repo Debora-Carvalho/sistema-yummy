@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react'; 
 import './ModalExtras.css';
+import { useCarrinho } from '../../contexts/CarrinhoContext.jsx';
 import { FaStar } from "react-icons/fa";
 import { MdShoppingCart } from "react-icons/md";
 
-function ModalExtras({ product, isOpen, onClose, onConfirm }) {
+function ModalExtras({ product, isOpen, onClose }) {
+    const { adicionarAoCarrinho } = useCarrinho(); // Usando o carrinho do contexto
     const [selectedExtras, setSelectedExtras] = useState([]);
     const [quantity, setQuantity] = useState(1);
     const [showMessage, setShowMessage] = useState(false);
-    
+
     // Reseta os extras e a quantidade sempre que o modal é aberto
     useEffect(() => {
         if (isOpen) {
@@ -42,6 +44,11 @@ function ModalExtras({ product, isOpen, onClose, onConfirm }) {
     };
 
     const subtotal = (product.price + selectedExtras.reduce((sum, extra) => sum + extra.price, 0)) * quantity;
+
+    const handleConfirm = () => {
+        adicionarAoCarrinho(product, selectedExtras, quantity); // Adicionando o produto ao carrinho
+        onClose(); // Fechar o modal após adicionar
+    };
 
     if (!isOpen) return null;
 
@@ -89,7 +96,7 @@ function ModalExtras({ product, isOpen, onClose, onConfirm }) {
                             <input type="text" value={quantity} readOnly className="quantity-input" />
                             <button onClick={increaseQuantity} className="btn-quantity">+</button>
                         </div>
-                        <button onClick={() => onConfirm(selectedExtras, quantity)} className="btn-confirm">
+                        <button onClick={handleConfirm} className="btn-confirm">
                             <p className="modal-subtotal"> R$ {subtotal.toFixed(2)}</p>
                             <p className="btn-confirm-div">|</p>
                             Adicionar <MdShoppingCart className="btn-cart__icon" />

@@ -1,0 +1,22 @@
+.container-nao-encontrada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    text-align: center;
+}
+
+.container-nao-encontrada img {
+    width: 20%;
+    height: auto;
+    object-fit: contain;
+}
+
+.container-nao-encontrada p {
+    font-size: 18px;
+    color: #777;
+    font-weight: bold;
+    margin-top: 10px;
+}

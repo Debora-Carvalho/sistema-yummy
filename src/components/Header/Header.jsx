@@ -26,7 +26,9 @@ const Header = () => {
           </div>
 
           <div className='btn-cart'>
-            <MdShoppingCart className='icon-cart'/>
+            <Link to={"/pedido"}>
+              <MdShoppingCart className='icon-cart'/>
+            </Link>
           </div>
         </div>
       </header>
