@@ -5,6 +5,7 @@ import Footer from '../../components/Footer/Footer.jsx';
 import ModalResumoPedido from '../../components/ModalResumoPedido/ModalResumoPedido.jsx';
 import ModalExtras from '../../components/ModalExtras/ModalExtras.jsx';
 import ImgCarrinhoVazio from '../../assets/images/carrinho-vazio.svg';
+import { MdShoppingCart } from 'react-icons/md';
 import { PiNotePencilBold } from "react-icons/pi";
 import './Pedido.css';
 
@@ -59,11 +60,13 @@ function Pedido() {
         ) : (
           <div className="container-pedido-card">
             <div className="container-pedido-card-resumo">
-              <h2>Resumo do Pedido</h2>
+              <h2>Resumo do pedido</h2>
               <p>Total: R$ {total.toFixed(2)}</p>
 
+              <br></br>
+
               <div className="form-group">
-                <label htmlFor="formaPagamento">Forma de Pagamento</label>
+                <label htmlFor="formaPagamento">Forma de pagamento</label>
                 <select
                   id="formaPagamento"
                   value={formaPagamento}
@@ -77,7 +80,7 @@ function Pedido() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="enderecoEntrega">Endereço de Entrega</label>
+                <label htmlFor="enderecoEntrega">Endereço de entrega</label>
                 <input
                   type="text"
                   id="enderecoEntrega"
@@ -97,8 +100,9 @@ function Pedido() {
                 />
               </div>
 
-              <button className="btn-confirmar" onClick={handleConfirmarPedido}>
-                Confirmar Pedido
+              <button className="btn-pedido-confirmar" onClick={handleConfirmarPedido}>
+                Confirmar pedido
+                <MdShoppingCart className="btn-pedido-cart__icon" />
               </button>
             </div>
 
@@ -123,7 +127,7 @@ function Pedido() {
                     className="btn-editar-item"
                   >
                     Editar 
-                    <PiNotePencilBold />
+                    <PiNotePencilBold className='btn-editar-item__icon'/>
                   </button>
                 </div>
               ))}
