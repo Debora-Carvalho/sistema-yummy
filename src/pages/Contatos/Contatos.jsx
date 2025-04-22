@@ -3,35 +3,55 @@ import './Contatos.css';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 
+import ImgPaginaContatos from "../../assets/images/pagina-contatos.jpg";
+import { MdLocationPin, MdEmail } from "react-icons/md";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { AiFillInstagram } from "react-icons/ai";
+
 function Contatos() {
     return (
-        <div className='container'>
+        <div className='container-principal'>
             <Header />
             <main className='container-contatos'>
-                <section className="info-contato">
-                    <h1>Fale com a gente</h1>
-                    <div className='info-contato__text'>
-                        <p><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade, Estado</p>
-                        <p><strong>Telefone:</strong> (11) 98765-4321</p>
-                        <p><strong>Email:</strong> contato@exemplo.com</p>
+                <div className="container-contatos-imagem">
+                    <img className='contatos-imagem__img' src={ImgPaginaContatos} alt="Garota ruiva comendo hambúrguer" />
+                </div>
+
+                <div className="info-contato">
+                    <div className='info-contato__endereco'>
+                        <h1>Estamos no endereço</h1>
+                        <div className='info-contato-tag'>
+                            <div className='info-contato-tag__logo'>
+                                <MdLocationPin />
+                            </div>
+                            <p className='info-contato-tag__texto'>Rua das Oliveiras, 123 - São Paulo, São Paulo - SP</p>
+                        </div>
                     </div>
-                </section>
 
-                <section className="formulario-contato">
-                    <h2>Nos envie uma mensagem</h2>
-                    <form>
-                        <label htmlFor="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required />
+                    <div className='info-contato__links'>
+                        <h1>Fale com a gente</h1>
+                        <div className='info-contato-tag'>
+                            <div className='info-contato-tag__logo'>
+                                <IoLogoWhatsapp />
+                            </div>
+                            <p className='info-contato-tag__texto'>(11) 98765-4321</p>
+                        </div>
 
-                        <label htmlFor="email">Email:</label>
-                        <input type="email" id="email" name="email" required />
+                        <div className='info-contato-tag'>
+                            <div className='info-contato-tag__logo'>
+                                <AiFillInstagram />
+                            </div>
+                            <p className='info-contato-tag__texto'>@yummyburger</p>
+                        </div>
 
-                        <label htmlFor="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-                        <button type="submit">Enviar</button>
-                    </form>
-                </section>
+                        <div className='info-contato-tag'>
+                            <div className='info-contato-tag__logo'>
+                                <MdEmail />
+                            </div>
+                            <p className='info-contato-tag__texto'>atendimento@yummyburger.com</p>                            
+                        </div>
+                    </div>                    
+                </div>
             </main>
             <Footer />
         </div>
