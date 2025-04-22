@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "nome": "Lucas Ferreira",
+      "avaliacao": 4.8,
+      "imagem": "1_lucas.jpg",
+      "descricao": "Hambúrguer suculento e bem temperado! Entrega rápida e atendimento excelente."
+    },
+    {
+      "id": 2,
+      "nome": "Marina Souza",
+      "avaliacao": 5.0,
+      "imagem": "2_marina.jpg",
+      "descricao": "Simplesmente perfeito! Pedi o combo e veio tudo quentinho. O milkshake também é incrível!"
+    },
+    {
+      "id": 3,
+      "nome": "João Alberto",
+      "avaliacao": 4.2,
+      "imagem": "3_joao.jpg",
+      "descricao": "Muito bom, só acho que o pão poderia ser um pouco mais crocante. No mais, tudo ótimo."
+    },
+    {
+      "id": 4,
+      "nome": "Ana Lima",
+      "avaliacao": 4.5,
+      "imagem": "4_ana.jpg",
+      "descricao": "Adorei o sabor e a variedade de molhos!"
+    },
+    {
+      "id": 5,
+      "nome": "Rafael Pedro",
+      "avaliacao": 4.9,
+      "imagem": "5_rafael.jpg",
+      "descricao": "Top demais! O cheddar é maravilhoso e os ingredientes são fresquinhos."
+    },
+    {
+      "id": 6,
+      "nome": "Clara Menezes",
+      "avaliacao": 5.0,
+      "imagem": "6_clara.jpg",
+      "descricao": "A melhor hamburgueria da cidade! Tudo impecável, do lanche à embalagem."
+    },
+    {
+      "id": 7,
+      "nome": "Pedro Nunes",
+      "avaliacao": 3.8,
+      "imagem": "7_pedro.jpg",
+      "descricao": "O lanche estava bom, mas veio diferente do que pedi. Resolveram rápido, pelo menos."
+    },
+    {
+      "id": 8,
+      "nome": "Júlia Oliveira",
+      "avaliacao": 4.7,
+      "imagem": "8_julia.jpg",
+      "descricao": "Adorei o atendimento e o carinho com o pedido! A batata rústica é sensacional!"
+    },
+    {
+      "id": 9,
+      "nome": "Fábio Dias",
+      "avaliacao": 4.3,
+      "imagem": "9_fabio.jpg",
+      "descricao": "Ótimo custo-benefício. O combo é bem servido e vale cada centavo."
+    },
+    {
+      "id": 10,
+      "nome": "Laura Andrade",
+      "avaliacao": 5.0,
+      "imagem": "10_laura.jpg",
+      "descricao": "Maravilhoso! O lanche vegetariano é uma delícia! Parabéns pelo cuidado com todos os públicos."
+    }
+  ]
+  
