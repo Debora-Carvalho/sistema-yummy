@@ -19,7 +19,7 @@
     max-width: 600px;
 }
 
-.modal-header {
+.modal-resumo-header {
     display: flex;
     width: 100%;
     align-items: end;
@@ -28,7 +28,7 @@
     padding: 0;
 }
 
-.modal-header .btn-close {
+.modal-resumo-header .btn-close__modal-resumo {
     position: fixed;
     font-size: 1.2rem;
     border: none;
@@ -40,21 +40,29 @@
     cursor: pointer; 
 }
 
-.modal-header .btn-close:hover {
-    color: #000;
+.modal-resumo-header .btn-close__modal-resumo:hover {
+    color: #555353;
 }
 
-.modal-body {
+.modal-resumo-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-top: 20px;
 }
 
-.modal-item {
+.modal-resumo-item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.modal-item img {
+.modal-resumo-item img {
     width: 80px;
     height: 80px;
     object-fit: cover;
@@ -62,29 +70,48 @@
     margin-right: 20px;
 }
 
-.modal-body .modal-resumo__total {
+.modal-resumo-body .modal-resumo__total {
     color:#222121;
 }
 
-.modal-footer {
+.modal-resumo-footer {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.btn-cancelar, .btn-confirmar {
-    padding: 10px 20px;
-    background-color: #ff6b6b;
-    color: white;
+.btn-resumo-cancelar, .btn-resumo-confirmar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    gap: 10px;
+    color: #fff;    
     cursor: pointer;
 }
 
-.btn-confirmar {
+.btn-resumo-confirmar {
     background-color: #4caf50;
 }
 
-.btn-cart__icon {
+.btn-resumo-confirmar:hover {
+    background-color: #307432;
+}
+
+.btn-resumo-cancelar {
+    background-color: #333333; 
+}
+
+.btn-resumo-cancelar:hover {
+    background-color: #777;
+}
+
+.btn-resumo-cart__icon {
+    font-size: 1.2rem;
     margin-left: 5px;
 }
