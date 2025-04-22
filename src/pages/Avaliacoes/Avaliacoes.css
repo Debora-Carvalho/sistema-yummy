@@ -1,0 +1,19 @@
+.container-avaliacoes {
+    text-align: start;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8.5rem 0px;
+}
+
+.container-avaliacoes h1 {
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.cards-avaliacoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}

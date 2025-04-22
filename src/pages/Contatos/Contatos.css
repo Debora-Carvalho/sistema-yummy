@@ -10,15 +10,14 @@
 
 .container-contatos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
     justify-content: center;
     align-items: center;
     margin: 0 5rem;
-    gap: 5rem;
 }
 
 .contatos-imagem__img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 30px;
 }
