@@ -23,6 +23,8 @@ function Avaliacoes() {
                         <CardAvaliacao key={avaliacao.id} review={avaliacao} />
                     ))}
                 </div>
+
+                <p className='cards-avaliacoes__mais'>Carregar mais avaliações...</p>
             </main>
             <Footer />
         </>

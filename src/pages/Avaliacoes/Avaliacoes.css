@@ -17,3 +17,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
+
+.cards-avaliacoes__mais {
+    margin-top: 2rem;
+    color: #d4d4d4;
+    cursor: pointer;
+}
