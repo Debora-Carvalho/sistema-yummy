@@ -50,7 +50,7 @@ function Cardapio() {
               <Card key={product.id} product={product} />
             ))
           ) : (
-            <p>Nenhum produto encontrado.</p>
+            <p className='cards-container__nao-encontrado'>Nenhum produto encontrado.</p>
           )}
         </div>
       </main>
