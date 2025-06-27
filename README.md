@@ -1,12 +1,36 @@
-# React + Vite
+# 🍔 Yummy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site que simula pedidos de fast-food online. O sistema permite favoritar produtos e filtrar os itens no cardápio por Favoritos, Salgados, Doces e Bebidas. Também é possivel adicionar itens a um carrinho de compras, alterando quantidade e inserindo informações para entrega.
 
-Currently, two official plugins are available:
+## Acesse através do link:
+https://sistema-yummy.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Rodando localmente
 
-## Expanding the ESLint configuration
+Clone o projeto
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+  git clone https://github.com/Debora-Carvalho/sistema-yummy.git
+```
+
+Entre no diretório do projeto
+
+```bash
+  cd sistema-yummy
+```
+
+Instale as dependências
+
+```bash
+  npm install
+```
+
+Inicie o servidor
+
+```bash
+  npm run dev
+```
+
+## Autora
+
+- [@Debora-Carvalho](https://www.github.com/Debora-Carvalho)
